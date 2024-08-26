@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -6,7 +5,7 @@ function App() {
     <div>
 
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          React FAQ DEMO APP v1.0.0
         </p>
 
     </div>
