@@ -1,17 +1,21 @@
+//-- App.js  -- 
+
 import './App.css';
 import './AppIndex.css';
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './components/pages/Home';
 import Login from './components/pages/Login';
+import Register from './components/pages/Register';
 
 function App() {
   return (
     <>
     <Router>
-        <div className='container'>
+        <div className='container'>           
           <Routes>
-            <Route path="/" element={<Home title="React Faq Demo App v1.0.3" />}/>
+            <Route path="/" element={<Home title="React Faq Demo App v1.0.4" />}/>
             <Route path='/login' element={<Login/>}/>
+            <Route path='/register' element={<Register/>}/>
             <Route path="*" element={
                 <>
                   <h4>No page found</h4>
@@ -25,4 +29,3 @@ function App() {
 }
 
 export default App;
-
