@@ -1,3 +1,6 @@
+
+//--- Register.js --- 
+
 import { Link, useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
 
@@ -54,7 +57,32 @@ const Register = (props) => {
                 return false;
             }
 
-            setMsg("* registration successful");
+            const _url = `https://d4a4b615-8c0c-4341-adae-e90a82bcb576-00-2xx2fade5wfsh.worf.replit.dev/register`;  
+            
+            const _post_data = {username:_uid, passord:_pwd};
+
+            fetch(_url,{method:'POST',
+                headers:{'Content-type':'application/json'},
+                body:JSON.stringify(_post_data)}
+            )
+            .then((res)=>res.json())
+            .then((data)=> {
+                
+                if(data.register === true)
+                {
+                    //set login session state or cookies 
+                    //update useState - login username 
+                    props.setUser(_uid)
+                    navigate("/dashboard",{replace:true})
+                }
+
+                setMsg(data.msg)
+            })
+            .catch((error)=>{
+                setMsg("* request error");
+                console.log("* request error *");
+                console.log(error);
+            });
 
         } catch (error) {
             console.log(`** ${_function_name}::error *`)
