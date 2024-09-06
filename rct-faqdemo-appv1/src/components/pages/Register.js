@@ -59,7 +59,7 @@ const Register = (props) => {
 
             const _url = `https://18959b93-e44b-40f4-95f8-0b8b59c124c6-00-jxhcsmotgrnu.spock.repl.co/register`;  
             
-            const _post_data = {username:_uid, passord:_pwd};
+            const _post_data = {username:_uid, password:_pwd};
 
             fetch(_url,{method:'POST',
                 headers:{'Content-type':'application/json'},
