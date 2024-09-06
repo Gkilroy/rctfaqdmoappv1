@@ -57,7 +57,7 @@ const Register = (props) => {
                 return false;
             }
 
-            const _url = `https://d4a4b615-8c0c-4341-adae-e90a82bcb576-00-2xx2fade5wfsh.worf.replit.dev/register`;  
+            const _url = `https://18959b93-e44b-40f4-95f8-0b8b59c124c6-00-jxhcsmotgrnu.spock.repl.co/register`;  
             
             const _post_data = {username:_uid, passord:_pwd};
 
