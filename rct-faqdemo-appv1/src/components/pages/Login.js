@@ -30,7 +30,7 @@ const Login = (props) => {
             
             const _uid = txtusername.current.value;
             const _pwd = txtpassword.current.value; //optionally: encrypt password
-            const _url = `https://18959b93-e44b-40f4-95f8-0b8b59c124c6-00-jxhcsmotgrnu.spock.repl.co/login/${_uid}/${_pwd}`;  
+            const _url = `https://18959b93-e44b-40f4-95f8-0b8b59c124c6-00-jxhcsmotgrnu.spock.replit.dev/login/${_uid}/${_pwd}`;  
 
             if(_uid === null || _uid === undefined || _uid.trim().length === 0)
             {
