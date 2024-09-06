@@ -104,7 +104,7 @@ const Register = (props) => {
             <p></p><button onClick={handleRegister}>register</button>
         </div>
         <p></p>
-            <Link to="/login">login</Link>
+        <Link to="/login">login</Link>
      </>
     )
 }
