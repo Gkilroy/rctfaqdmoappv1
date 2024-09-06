@@ -12,7 +12,7 @@ function App() {
     <Router>
         <div className='container'>           
           <Routes>
-            <Route path="/" element={<Home title="React Faq Demo App v1.0.4" />}/>
+            <Route path="/" element={<Home title="React Faq Demo App v2.1.0" />}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='/register' element={<Register/>}/>
             <Route path='/dashboard' element={<Dashboard/>}/>
